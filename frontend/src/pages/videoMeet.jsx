@@ -465,7 +465,7 @@ let addMessage = (data, sender, socketIdSender) => {
       try {
         localVideoRef.current.srcObject.getTracks().forEach(track => track.stop())
       }catch(e) {}
-         navigate("/home");
+        navigate("/home", { replace: true });
 
     }
 
