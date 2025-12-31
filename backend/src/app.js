@@ -8,7 +8,6 @@ import userRoutes from "./routes/users.routes.js";
 
 
 
-
 const app = express();
 const server = createServer(app);
 const io = connectToSocket(server);
@@ -24,7 +23,6 @@ app.use("/api/v1/users", userRoutes);
 app.get("/", (req, res) => {
     res.send("create the server");
 })
-
 
 
 const start = async () => {
