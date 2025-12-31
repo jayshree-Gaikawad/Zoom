@@ -14,8 +14,7 @@ import StopScreenShareIcon from '@mui/icons-material/StopScreenShare';
 import Badge from '@mui/material/Badge';
 import ChatIcon from '@mui/icons-material/Chat';
 import server from '../environment';
-// import { useNavigate } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 
 const server_url = server;
@@ -31,7 +30,7 @@ const peerConfigConnections = {
 export default function VideoMeetComponent() {
 
 
-    // const navigate = useNavigate(); 
+    const navigate = useNavigate(); 
 
     var socketRef = useRef();
     let socketIdRef = useRef();
@@ -466,7 +465,8 @@ let addMessage = (data, sender, socketIdSender) => {
       try {
         localVideoRef.current.srcObject.getTracks().forEach(track => track.stop())
       }catch(e) {}
-         window.location.href = "/home"
+         navigate("/home");
+
     }
 
 
