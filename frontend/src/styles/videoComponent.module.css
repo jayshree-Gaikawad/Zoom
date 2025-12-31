@@ -1,0 +1,104 @@
+.meetVideoContainer {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(1, 4, 48);
+}
+
+.multipleVideos {
+ padding: 5px;
+}
+
+
+.meetUserVideo {
+    position: absolute;
+    bottom: 10vh;
+    height: 25vh;
+    width: auto;
+    left: 0;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.buttonContainers {
+  position: absolute;
+  width: 100vw;
+  bottom: 5vh;
+  text-align: center;
+}
+
+.buttonContainers svg {
+  font-size: 3rem;
+  padding-bottom: 0px;
+}
+
+.conferenceView {
+  display: flex;
+  gap: 2px;
+}
+
+.conferenceView  video {
+  width: 8vw;
+  min-width: 20vw;
+  border-radius: 10px;
+  
+}
+
+
+.chatRoom {
+ position: absolute;
+ height: 90vh;
+ width: 22vw;
+ background-color: white;
+ right: 0;
+ border-radius: 10px;
+ padding-inline: 20px;
+ 
+
+}
+
+
+.chatContainer {
+  position: relative;
+  height: 100%; 
+}
+
+
+.chattingArea {
+  position: absolute;
+  bottom: 0;
+}
+
+.homeVideoComponent {
+  padding: 10px;
+}
+
+.inputText {
+  padding: 10px;
+}
+
+.homeVideo {
+height: 400px;
+}
+
+.connectButton {
+  margin-top: 20px;
+} 
+
+
+/* chatScroll */
+
+.chattingDisplay {
+  height: 350px;        /* fixed height */
+  overflow-y: auto;     /* 👈 SCROLL ENABLE */
+  padding: 10px;
+}
+
+/* Optional – smooth scroll look */
+.chattingDisplay::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chattingDisplay::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
