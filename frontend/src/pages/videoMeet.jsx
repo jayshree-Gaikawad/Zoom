@@ -28,6 +28,7 @@ const peerConfigConnections = {
 
 export default function VideoMeetComponent() {
 
+
     var socketRef = useRef();
     let socketIdRef = useRef();
     
@@ -457,7 +458,7 @@ let addMessage = (data, sender, socketIdSender) => {
     }
 
 
-    let handleEndCall = () => {
+   let handleEndCall = () => {
       try {
         let tracks = localVideoRef.current.srcObject.getTracks();
         tracks.forEach(track => track.stop())
@@ -465,6 +466,7 @@ let addMessage = (data, sender, socketIdSender) => {
 
       window.location.href = "/home";
     }
+
 
 
 
